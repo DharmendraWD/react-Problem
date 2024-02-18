@@ -1,0 +1,44 @@
+TO WRITE CUSTOM CSS INLINE:
+style={{background:'red', textAlign:'center'}}
+
+IMPORTING IMAGE 
+import image4 from './image4.jpg';
+
+TO GO STEP BACK 
+ '../../assets'
+
+TO GET HTML SUGGETIONS
+ "emmet.includeLanguages": {"javascript": "javascriptreact"}
+
+
+CREATING VITE
+npm create vite@latest _NAME
+
+CREATING REACT APP
+npm install
+
+TERNARY OPERATOR
+  {data.close ?  <IoCloseSharp className="buttomPart_close"/> : <IoCloudDownloadOutline  className="buttomPart_close"/>}
+
+
+
+// IF OBJECT HAS THE PROPERTY DISCOUNT THEN ONLY ADD "padding" CLASS IN DIV
+<div className={`mainDiv ${items.discPercentage ? '' : 'padding'}`} >
+
+
+
+GET ALL CHILDREN VALUE WHICH IS INSIDE DIV ON CCLICK
+const itemPage = (event) => {
+  const childrenValues = Array.from(event.currentTarget.children).map((child) => {
+    return child.innerText || child.value || '';
+  });
+
+  console.log('MainDiv clicked. Children Values:', childrenValues);
+};
+
+
+
+
+
+//PASS STYLE AS VARIABLE
+//I WANT TO PASS A 
